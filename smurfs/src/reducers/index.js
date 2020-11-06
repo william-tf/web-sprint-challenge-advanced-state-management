@@ -1,4 +1,4 @@
-import {FETCH_SUCCESSFUL, FETCH_FAILED, POST_SUCCESSFUL, POST_FAIL} from '../actions'
+import {FETCH_SUCCESSFUL, FETCH_FAILED} from '../actions'
 
 
 
@@ -29,10 +29,6 @@ export const reducer = (state = initialState, action) =>{
                 ...state,
                 error:action.payload
             }
-            case POST_SUCCESSFUL:
-                return{
-
-                }
         default:
             return state;
     }
